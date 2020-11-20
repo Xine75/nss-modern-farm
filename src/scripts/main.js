@@ -1,63 +1,69 @@
-console.log("Welcome to the main module")
-
 import { createPlan } from "./plan.js"
-createPlan();
+import { usePlants } from "./field.js"
+import { plantSeeds } from "./tractor.js"
 
 const yearlyPlan = createPlan();
 
-console.log(yearlyPlan);
-
-// testing asparagus
-
-import { createAsparagus } from "./seeds/asparagus.js"
-
-const asparagusSeed = createAsparagus()
-console.log(asparagusSeed)
-
-// testing corn
-
-import { createCorn } from "./seeds/corn.js"
-
-const cornSeed = createCorn()
-console.log(cornSeed)
-
-// testing potato
-
-import { createPotato } from "./seeds/potato.js"
-
-const potatoSeed = createPotato()
-console.log(potatoSeed)
-
-// testing soybean
-
-import { createSoybean } from "./seeds/soybean.js"
-
-const soybeanSeed = createSoybean()
-console.log(soybeanSeed)
-
-// testing sunflower
-
-import { createSunflower } from "./seeds/sunflower.js"
-
-const sunflowerSeed = createSunflower()
-console.log(sunflowerSeed)
-
-// testing wheat
-
-import { createWheat } from "./seeds/wheat.js"
-
-const wheatSeed = createWheat()
-console.log(wheatSeed)
-
-import { addPlant } from "./field.js"
-addPlant(wheatSeed);
-
-import { usePlants } from "./field.js"
-const plantSeed = usePlants()
-usePlants();
+plantSeeds(yearlyPlan);
+console.log(usePlants())
 
 
 
-console.log(plantSeed)
+console.log("Yearly Plan!", yearlyPlan);
+
+// // testing asparagus
+
+// import { createAsparagus } from "./seeds/asparagus.js"
+
+// const asparagusSeed = createAsparagus()
+// console.log(asparagusSeed)
+
+// // testing corn
+
+// import { createCorn } from "./seeds/corn.js"
+
+// const cornSeed = createCorn()
+// console.log(cornSeed)
+
+// // testing potato
+
+// import { createPotato } from "./seeds/potato.js"
+
+// const potatoSeed = createPotato()
+// console.log(potatoSeed)
+
+// // testing soybean
+
+// import { createSoybean } from "./seeds/soybean.js"
+
+// const soybeanSeed = createSoybean()
+// console.log(soybeanSeed)
+
+// // testing sunflower
+
+// import { createSunflower } from "./seeds/sunflower.js"
+
+// const sunflowerSeed = createSunflower()
+// console.log(sunflowerSeed)
+
+// // testing wheat
+
+// import { createWheat } from "./seeds/wheat.js"
+
+// const wheatSeed = createWheat()
+// console.log(wheatSeed)
+
+// // importing addPlant and usePlants and testing with wheatSeed
+
+// import { addPlant } from "./field.js"
+// addPlant(wheatSeed);
+
+
+// // const plantSeed = usePlants()
+
+
+
+
+// // console.log(plantSeed)
 
 
