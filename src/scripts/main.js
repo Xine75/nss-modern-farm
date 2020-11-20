@@ -49,3 +49,15 @@ import { createWheat } from "./seeds/wheat.js"
 const wheatSeed = createWheat()
 console.log(wheatSeed)
 
+import { addPlant } from "./field.js"
+addPlant(wheatSeed);
+
+import { usePlants } from "./field.js"
+const plantSeed = usePlants()
+usePlants();
+
+
+
+console.log(plantSeed)
+
+
